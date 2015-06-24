@@ -1,0 +1,5 @@
+if failure with ssh, detach the volume and attach it to a working instance as a block device like /dev/sdf
+lsblk shows the mounted device
+mount it and edit fstab to remove all lines.
+ssh configured to work only after successful mount of fstab entries.
+Detach and attach it to original as root (/dev/sda1) volume to fire back
