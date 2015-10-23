@@ -1,3 +1,4 @@
+scp -i SgInstance.pem Desktop/gutenberg/* ubuntu@ec2-54-251-156-235.ap-southeast-1.compute.amazonaws.com:~/
 if failure with ssh, detach the volume and attach it to a working instance as a block device like /dev/sdf
 lsblk shows the mounted device
 mount it and edit fstab to remove all lines.
